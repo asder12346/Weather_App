@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">WeatherNow</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><button id="dark-mode-toggle">🌙</button></li> -->
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Get Live Weather Updates Instantly</h1>
+            <p>Accurate and real-time weather data for any city worldwide.</p>
+        </div>
+    </section>
+    
+    <section class="weather-section">
+        <div class="search-container">
+            <input class="city-name" type="text" id="city" placeholder="Enter city name...">
+            <button onclick="getWeather()">Check Weather</button>
+        </div>
+        <div id="weather-info" class="weather-box">
+            <h2 id="city-name"></h2>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <p id="description"></p>
+            <p>Temperature: <span id="temp"></span>°C</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="wind"></span> km/h</p>
+        </div>
+        <p id="error-message"></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 WeatherNow(Corner_Tech). All rights reserved.</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
